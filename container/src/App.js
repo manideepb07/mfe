@@ -14,14 +14,14 @@ const generateClassName = createGenerateClassName({
 export default () => {
   return (
     <>
-      <StylesProvider generateClassName={generateClassName}>
-        <BrowserRouter>
+      <BrowserRouter>
+        <StylesProvider generateClassName={generateClassName}>
           <div>
             <Header />
             <MarketingAppComponent />
           </div>
-        </BrowserRouter>
-      </StylesProvider>
+        </StylesProvider>
+      </BrowserRouter>
     </>
   );
 };
